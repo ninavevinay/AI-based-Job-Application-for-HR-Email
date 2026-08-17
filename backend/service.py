@@ -56,7 +56,7 @@ Return only a JSON object in this exact format:
                         "content": prompt,
                     }
                 ],
-                model="llama-3.3-70b-versatile", 
+                model="openai/gpt-oss-20b", 
                 response_format={"type": "json_object"}  # Forces Groq to return clean JSON
             )
             

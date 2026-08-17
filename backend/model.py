@@ -12,6 +12,10 @@ class LoginRequest(BaseModel):
     password: str
 
 
+class GoogleAuthRequest(BaseModel):
+    credential: str
+
+
 class EmailRequest(BaseModel):
     resume_text: str
     job_position: str
@@ -19,3 +23,13 @@ class EmailRequest(BaseModel):
     from_email: str = ""
     to_email: str = ""
     candidate_name: str = ""
+
+
+class UpdateProfileRequest(BaseModel):
+    name: str
+
+
+class ChangePasswordRequest(BaseModel):
+    current_password: str
+    new_password: str
+
